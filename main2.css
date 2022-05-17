@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.fbBtn>a {
+    text-decoration: none;
+    color: white;
+}
+
+.twitterBtn>a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.leftSide {
+    width: 50%;
+    background: linear-gradient(135deg, rgba(255, 0, 144, 0.849), rgba(219, 0, 128, 0.3)), url(./zdjecie.jpg);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.leftBox {
+    width: 80%;
+}
+
+.leftTitle {
+    font-size: 100px;
+    font-weight: 700;
+    color: white;
+}
+
+.leftDesc {
+    color: white;
+    margin-top: 20px;
+}
+
+.leftSocialDesc {
+    color: white;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+.fbBtn {
+    width: 100px;
+    height: 35px;
+    margin-right: 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(61, 61, 255);
+    border: none;
+    box-shadow: 0 0 0.5em rgb(56, 56, 228);
+    transition: 0.4s;
+}
+
+.fbBtn:hover {
+    background-color: rgb(23, 23, 148);
+}
+
+
+.twitterBtn {
+    width: 350px;
+    height: 35px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(0, 189, 173);
+    border: none;
+    box-shadow: 0 0 0.5em rgb(0, 173, 159);
+    transition: 0.4s;
+}
+
+.twitterBtn:hover {
+    background-color: rgb(0, 116, 110)
+}
+
+.twitterBtn>a>i {
+    margin-right: 10px;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+.rightSide {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.rightBox {
+    width: 60%;
+    margin-top: 90px;
+    color: rgb(48, 48, 70);
+}
+
+.rightTitle {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.rightDesc>a {
+    text-decoration: none;
+    color: rgb(48, 48, 70);
+}
+
+.rightDesc {
+    font-size: 16px;
+    margin: 20px 0px
+}
+
+.rightForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.field {
+    border: none;
+    border-bottom: 2px solid rgb(48, 48, 70);
+    padding: 7px;
+    font-size: 17px;
+}
+
+.pass {
+    margin-top: 20px;
+}
+
+.field:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.check {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.check>a {
+    text-decoration: none;
+    color: rgb(48, 48, 70);
+}
+
+.login {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(59, 221, 59);
+    color: white;
+    align-self: flex-end;
+    margin-top: 30px;
+    box-shadow: 0 0 0.5em rgb(44, 168, 44);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.login:hover {
+    background-color: rgb(27, 161, 27);
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .leftSide {
+        width: 100%;
+        padding-bottom: 20px;
+        background-position: center;
+        padding: 2px 5px;
+    }
+
+    .rightSide {
+        width: 100%;
+        padding: 2px 5px;
+    }
+
+    .leftBox {
+        width: 100%;
+    }
+
+    .rightBox {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 591px) {
+    .fbBtn {
+        width: 100%;
+    }
+
+    .twitterBtn {
+        width: 100%;
+    }
+
+    .leftBox {
+        width: 100%;
+    }
+
+    .rightBox {
+        width: 100%;
+    }
+}
+
+@media print {
+    h1 {
+        color: red;
+    }
+}
+
+/* wydruk */
